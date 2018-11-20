@@ -1,11 +1,11 @@
 <?php
-set_include_path($_SERVER['DOCUMENT_ROOT'].'/../resources/views/components/');
+set_include_path($_SERVER['DOCUMENT_ROOT'].'/../resources/includes/');
 
 if (empty($_GET['page'])) {
 	header('Location:top-shows?page=1');
 }
 
-include("tvshows.php");
+include_once('tvshows.php');
 
 $cacheKey = 'top-tvshows';
 

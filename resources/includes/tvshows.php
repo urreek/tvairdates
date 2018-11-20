@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php';
 include_once('pagination.php');
 
 function getShows($tvshows, $currentPage){
-  $configs = require __DIR__.'/../../../config.php';
+  $configs = require __DIR__.'/../../config.php';
   $showPerPage = $configs['GRID_ROWS'] * $configs['GRID_COLUMNS'];
   $total_pages = ceil(count($tvshows) / $showPerPage);
   $file = basename($_SERVER["SCRIPT_FILENAME"], '.php'); 

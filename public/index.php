@@ -1,10 +1,8 @@
 <?php
-// Grabs the URI and breaks it apart in case we have querystring stuff
+
 $request_uri = basename(explode('?', $_SERVER['REQUEST_URI'], 2)[0], '.php');
 
-// Route it up!
 switch ($request_uri) {
-    // Home page
     case '':
         require '../resources/views/new_shows.php';
         break;

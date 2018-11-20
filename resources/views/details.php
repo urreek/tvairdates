@@ -1,5 +1,5 @@
 <?php
-set_include_path($_SERVER['DOCUMENT_ROOT'].'/../resources/views/components/');
+set_include_path($_SERVER['DOCUMENT_ROOT'].'/../resources/includes/');
 require_once __DIR__.'/../../vendor/autoload.php';
 $token  = new \Tmdb\ApiToken('b616193ba38eec32e0603fae57f97cbe');
 $client = new \Tmdb\Client($token);

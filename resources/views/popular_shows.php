@@ -1,10 +1,10 @@
 <?php
-set_include_path($_SERVER['DOCUMENT_ROOT'].'/../resources/views/components/');
+set_include_path($_SERVER['DOCUMENT_ROOT'].'/../resources/includes/');
 
 if (empty($_GET['page'])) {
 	header('Location:popular-shows?page=1');
 }
-require_once __DIR__.'/components/tvshows.php';
+include_once('tvshows.php');
 
 $cacheKey = 'popular-tvshows';
 
